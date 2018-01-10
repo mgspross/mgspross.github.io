@@ -1,0 +1,91 @@
+* {
+  font-family: "Helvetica", "Arial";
+  line-height: 0.85em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: rgb(38, 200, 245);
+}
+
+header {
+  background-color: white;
+  padding: 2rem 2rem 7rem 2em;
+}
+
+h1 {
+  font-size: 8rem;
+  color: rgb(38, 200, 245);
+  letter-spacing: -0.07em;
+  padding: 0.5rem;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 > em {
+  font-style: normal;
+  text-transform: lowercase;
+  font-family: monospace;
+  font-weight: normal;
+  letter-spacing: -0.5rem;
+  color: #444;
+}
+
+h1 > em:before {
+  content: "{";
+}
+
+h1 > em::after {
+  content: "}";
+}
+
+img.avatar {
+  display: block;
+  border-radius: 50%;
+  border: 1.5rem white solid;
+  position: relative;
+  left: -7rem;
+  margin: -8rem 50% 0;
+  width: 14rem;
+  box-sizing: border-box;
+}
+
+img.avatar::after {
+  content: "BBB";
+  display: block;
+}
+
+section {
+  width: 30%;
+  margin: 0% auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 5rem;
+  letter-spacing: -0.07em;
+  color: black;
+  margin: 2rem 0;
+}
+
+p,
+p > * {
+  font-family: "Arial";
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: black;
+}
+
+p > a {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+p > strong {
+  background-color: rgba(255, 255, 0, 0.75);
+  padding: 0 2px;
+}
